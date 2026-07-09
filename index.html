@@ -12,6 +12,10 @@
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     font-family:Arial, Helvetica, sans-serif;
     background:#0a0f18;
@@ -72,6 +76,14 @@ nav a{
     border-radius:12px;
     text-decoration:none;
     font-weight:700;
+    border:none;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 0 20px rgba(91,192,255,0.4);
 }
 
 .hero-image img{
@@ -286,7 +298,7 @@ nav a{
     </p>
 
     <div style="text-align:center; margin-top:30px;">
-        <a href="#" class="btn">Reserve Your Tri-Brella</a>
+        <button class="btn" onclick="reserveUmbrella()">Reserve Your Tri-Brella</button>
     </div>
 </section>
 
@@ -295,5 +307,11 @@ nav a{
     <p>© 2026 Tri-Brella. Designed by Evan Sands.</p>
 </footer>
 
+<script>
+function reserveUmbrella() {
+    alert("Sorry, you can't reserve a Tri-Brella right now. We don't currently have any in stock.");
+}
+</script>
+
 </body>
-      </html>
+</html>
