@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tri-Brella | Smart Triangle Umbrella</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#0a0f18;
+    color:white;
+    line-height:1.6;
+}
+
+.hero{
+    min-height:100vh;
+    background:linear-gradient(135deg,#0a0f18,#111827,#0f172a);
+    padding:20px 6%;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:60px;
+}
+
+.logo{
+    font-size:1.8rem;
+    font-weight:800;
+    letter-spacing:2px;
+    color:#5bc0ff;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:600;
+}
+
+.hero-content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.hero-text h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:1.2rem;
+    color:#cbd5e1;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:#5bc0ff;
+    color:#08111f;
+    padding:15px 30px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:700;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 0 40px rgba(91,192,255,0.3);
+}
+
+.section{
+    padding:80px 6%;
+}
+
+.section h2{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:40px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#111827;
+    padding:25px;
+    border-radius:18px;
+    border:1px solid #1f2937;
+}
+
+.card h3{
+    color:#5bc0ff;
+    margin-bottom:10px;
+}
+
+.dark{
+    background:#0f172a;
+}
+
+.models{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.model{
+    background:#111827;
+    border-radius:20px;
+    overflow:hidden;
+    border:1px solid #1f2937;
+}
+
+.model img{
+    width:100%;
+}
+
+.model h3{
+    padding:20px 20px 10px;
+    color:#5bc0ff;
+}
+
+.model p{
+    padding:0 20px 20px;
+    color:#cbd5e1;
+}
+
+.tech{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.tech img{
+    width:100%;
+    border-radius:20px;
+}
+
+.tech h3{
+    color:#5bc0ff;
+    margin:20px 0 8px;
+}
+
+.footer{
+    padding:30px 6%;
+    border-top:1px solid #1f2937;
+    text-align:center;
+    color:#94a3b8;
+}
+
+@media(max-width:900px){
+    .hero-content,
+    .tech{
+        grid-template-columns:1fr;
+    }
+
+    .hero-text h1{
+        font-size:3rem;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+    <nav>
+        <div class="logo">TRI-BRELLA</div>
+        <div>
+            <a href="#features">Features</a>
+            <a href="#models">Models</a>
+            <a href="#tech">Technology</a>
+            <a href="#buy">Pre-Order</a>
+        </div>
+    </nav>
+
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1>The Future of Umbrellas</h1>
+            <p>
+                A premium triangle-shaped umbrella with water-gutter technology,
+                adjustable height, automatic opening, and a built-in LED light.
+            </p>
+            <a href="#models" class="btn">Explore Tri-Brella</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="https://github.com/user-attachments/assets/a1cc80b9-b7d1-4f68-a278-6e59107ba5a8" alt="Tri-Brella Umbrella">
+        </div>
+    </div>
+</header>
+
+<section id="features" class="section">
+    <h2>Why Tri-Brella?</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Triangle Design</h3>
+            <p>Unique aerodynamic shape with modern styling.</p>
+        </div>
+
+        <div class="card">
+            <h3>Water Gutter</h3>
+            <p>Channels rainwater into a removable reservoir.</p>
+        </div>
+
+        <div class="card">
+            <h3>Adjustable Height</h3>
+            <p>Perfect for users of different heights.</p>
+        </div>
+
+        <div class="card">
+            <h3>LED Light</h3>
+            <p>Stay visible and safe during nighttime walks.</p>
+        </div>
+    </div>
+</section>
+
+<section id="models" class="section dark">
+    <h2>Tri-Brella Models</h2>
+
+    <div class="models">
+        <div class="model">
+            <img src="https://github.com/user-attachments/assets/a1cc80b9-b7d1-4f68-a278-6e59107ba5a8" alt="Tri-Brella Smart">
+            <h3>Tri-Brella Smart</h3>
+            <p>Full smart features with LED light and water reservoir.</p>
+        </div>
+
+        <div class="model">
+            <img src="https://github.com/user-attachments/assets/a1cc80b9-b7d1-4f68-a278-6e59107ba5a8" alt="Tri-Brella Pro">
+            <h3>Tri-Brella Pro</h3>
+            <p>Enhanced wind resistance and extended battery life.</p>
+        </div>
+
+        <div class="model">
+            <img src="https://github.com/user-attachments/assets/a1cc80b9-b7d1-4f68-a278-6e59107ba5a8" alt="Tri-Brella Lite">
+            <h3>Tri-Brella Lite</h3>
+            <p>Lightweight version for everyday use.</p>
+        </div>
+    </div>
+</section>
+
+<section id="tech" class="section">
+    <h2>Smart Technology</h2>
+
+    <div class="tech">
+        <img src="https://github.com/user-attachments/assets/a1cc80b9-b7d1-4f68-a278-6e59107ba5a8" alt="Tri-Brella Technology">
+
+        <div>
+            <h3>Water Reservoir System</h3>
+            <p>Rainwater flows through the edge gutter and collects in a removable container.</p>
+
+            <h3>Auto Open Button</h3>
+            <p>One-touch opening for fast protection in sudden rain.</p>
+
+            <h3>USB-C Rechargeable</h3>
+            <p>Recharge the LED lighting system with modern USB-C charging.</p>
+        </div>
+    </div>
+</section>
+
+<section id="buy" class="section dark">
+    <h2>Pre-Order Tri-Brella</h2>
+    <p style="text-align:center;">
+        Be among the first to experience the next generation of umbrellas.
+    </p>
+
+    <div style="text-align:center; margin-top:30px;">
+        <a href="#" class="btn">Reserve Your Tri-Brella</a>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="logo">TRI-BRELLA</div>
+    <p>© 2026 Tri-Brella. Designed by Evan Sands.</p>
+</footer>
+
+</body>
+      </html>
