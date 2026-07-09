@@ -1,113 +1,136 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Tri-brella | Limited Bumbrella</title>
+<title>Tri-brella</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      text-align: center;
-      color: #111;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #111;
+  scroll-behavior: smooth;
+}
 
-    .topbar {
-      background: black;
-      color: white;
-      padding: 20px;
-      font-size: 30px;
-      font-weight: bold;
-    }
+.navbar {
+  background: black;
+  padding: 18px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
 
-    .hero {
-      padding: 60px 20px;
-    }
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 18px;
+  transition: 0.3s;
+}
 
-    h1 {
-      font-size: 45px;
-      margin-bottom: 10px;
-    }
+.navbar a:hover {
+  color: #aaa;
+}
 
-    p {
-      font-size: 22px;
-    }
+.hero {
+  text-align: center;
+  padding: 70px 20px;
+}
 
-    .card {
-      background: white;
-      margin: 30px auto;
-      padding: 30px;
-      max-width: 700px;
-      border-radius: 25px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-    }
+.hero h1 {
+  font-size: 50px;
+}
 
-    img {
-      width: 90%;
-      max-width: 550px;
-      border-radius: 20px;
-      margin-top: 20px;
-    }
+.hero p {
+  font-size: 22px;
+}
 
-    .button {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 15px 35px;
-      background: black;
-      color: white;
-      text-decoration: none;
-      border-radius: 30px;
-      font-size: 18px;
-      transition: 0.3s;
-    }
+.button {
+  display: inline-block;
+  background: black;
+  color: white;
+  padding: 15px 35px;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: 0.3s;
+}
 
-    .button:hover {
-      transform: scale(1.08);
-    }
+.button:hover {
+  transform: scale(1.08);
+}
 
-    .limited {
-      color: red;
-      font-weight: bold;
-      font-size: 25px;
-    }
-  </style>
+.section {
+  background: white;
+  margin: 40px auto;
+  max-width: 800px;
+  padding: 40px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,.15);
+}
+
+.section img {
+  width: 90%;
+  max-width: 600px;
+  border-radius: 20px;
+}
+
+.limited {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+</style>
 </head>
 
 <body>
 
-<div class="topbar">
-  Limited Bumbrella
+<div class="navbar">
+  <a href="#home">Tri-brella</a>
+  <a href="#bumbrella">Limited Bumbrella</a>
 </div>
 
-<div class="hero">
 
-  <h1>Tri-brella</h1>
-  <p>The future of umbrellas.</p>
+<div id="home" class="hero">
 
-  <div class="card">
+<h1>Tri-brella</h1>
 
-    <h1>Limited Bumbrella</h1>
+<p>
+The future of umbrellas.
+</p>
 
-    <p class="limited">
-      LIMITED EDITION!
-    </p>
-
-    <p>
-      Limited Bumbrella — get it now!  
-      Only available for a limited time.
-    </p>
-
-    <img src="https://share.gemini.google/fxscwv0DJOFm" alt="Limited Bumbrella">
-
-    <br>
-
-    <a class="button" href="#">
-      Get Your Limited Bumbrella
-    </a>
-
-  </div>
+<a class="button" href="#">
+Explore Tri-brella
+</a>
 
 </div>
+
+
+<div id="bumbrella" class="section">
+
+<h1>Limited Bumbrella</h1>
+
+<p class="limited">
+LIMITED EDITION!
+</p>
+
+<p>
+Limited Bumbrella — get it now!  
+This special edition won't be available forever.
+</p>
+
+<img src="https://share.gemini.google/fxscwv0DJOFm" alt="Limited Bumbrella">
+
+<br>
+
+<a class="button" href="#">
+Get Limited Bumbrella
+</a>
+
+</div>
+
 
 </body>
 </html>
